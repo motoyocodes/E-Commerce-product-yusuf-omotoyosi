@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Kumbh Sans, sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.li-color {
+  color: hsl(219, 9%, 45%);
+}
+
+.right-move {
+  margin-right: 35px;
+}
+
+.padd-top {
+  padding-top: 130px;
+}
+
+@media (min-width: 1060px) {
+  .pt-large-screen {
+    padding-top: 130px;
+  }
+}
+
+@media (min-width: 1060px) {
+  .marg-top {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1060px) {
+  .margg-top {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1060px) {
+  .mar-top {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .mt-small-screen {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 1060px) {
+  .mt-smal-screen {
+    margin-top: 35px;
+  }
+}
+@media (min-width: 1060px) {
+  .ml-smal-screen {
+    margin-left: 35px;
+  }
+}
+@media (min-width: 1060px) {
+  .mg-smal-screen {
+    padding: 0 12px;
+  }
+}
+@media (max-width: 1060px) {
+  .width-small-screen {
+    width: 100%;
+  }
+}
+@media (max-width: 1060px) {
+  .height-small-screen {
+    padding-bottom: 50px;
+  }
+}
+
+.border-style {
+  border-bottom: 1.8px solid hsl(223, 64%, 98%);
+}
+
+.padd-right {
+  padding-right: 150px;
+}
+
+.marr-top {
+  margin-top: 35px;
+}
+
+.pad-top {
+  padding-top: 14px;
+}
+
+.mar-right {
+  margin-right: 10px;
+}
+.ma-top {
+  margin-top: 25px;
+}
+
+.padi-left {
+  padding-left: 20px;
+}
+
+.margi-left {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.mar-ri {
+  margin-right: 1px;
+}
+
+.mar-btm {
+  margin-bottom: 10px;
+}
+
+.pad-all {
+  padding: 15px;
+}
+
+.padd-all {
+  padding: 35px;
+}
+
+.mae-top {
+  margin-top: 50px;
+}
+
+@media (max-width: 1060px) {
+  .padd-top-small-screen {
+    height: 40px;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+}
