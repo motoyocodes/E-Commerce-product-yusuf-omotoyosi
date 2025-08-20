@@ -1,69 +1,50 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + E-Commerce Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **React + TypeScript + Vite** template extended with a simple e-commerce front-end. It demonstrates a responsive product page with cart functionality, lightbox popup for product images, and mobile-friendly navigation.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Technologies Used](#technologies-used)
+- [Setup & Run](#setup--run)
+- [Detailed Component Functionality](#detailed-component-functionality)
+- [ESLint & Code Quality](#eslint--code-quality)
+- [Usage Examples](#usage-examples)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### General Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Responsive design**: Works seamlessly across mobile, tablet, and desktop.
+- **Mobile-first layout**: Optimized for smaller screens with hamburger menu navigation.
+- **Interactive product carousel**: Users can click thumbnails or arrows to view different images.
+- **Lightbox popup**: Clicking the main product image opens a centered popup with navigation arrows and thumbnails.
+- **Cart management**:
+  - Add product(s) to the cart with a selectable quantity.
+  - View cart contents in a dropdown container.
+  - Delete items from the cart.
+  - Cart icon shows a dynamic quantity badge.
+  - Checkout button (placeholder for integration).
+- **Dynamic state management** using `useState` and `useEffect` to handle cart updates and UI reactivity.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Navigation Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Desktop navigation**: Horizontal menu with active link highlighting.
+- **Mobile navigation**: Hamburger menu slides in a sidebar. Overlay click closes the menu.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Visual & UX Features
+
+- **Product image thumbnails** for quick selection.
+- **Hover effects** on thumbnails and buttons.
+- **Quantity selector**: Increment/decrement product count before adding to cart.
+- **Darkened overlay** for lightbox popup to focus on the product.
+- **Delete icon** inside cart to remove items instantly.
+
+---
+
+## Project Structure
