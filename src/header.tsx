@@ -24,8 +24,6 @@ export default function Header({ cart }: { cart: CartItem | null }) {
     setLocalCart(cart);
   }, [cart]);
 
-  const handleDelete = () => setLocalCart(null);
-
   const navItems = ["Collections", "Men", "Women", "About", "Contact"];
 
   return (
